@@ -20,8 +20,8 @@ The templates provided by ``spirit.bob`` are categorized as follows:
 - Zope Packages (planned)
 - Pyramid Packages (planned)
 
-Plone and Diazo Packages
-------------------------
+Plone and Diazo Package Templates
+---------------------------------
 
 diazo_theme
     A installable diazo core or customer theme.
