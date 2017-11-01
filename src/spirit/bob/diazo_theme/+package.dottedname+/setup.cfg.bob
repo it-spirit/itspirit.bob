@@ -1,17 +1,22 @@
 [check-manifest]
 ignore =
     *.DS_Store
+    *.css.map
     .tx
     .tx/*
     .coveragerc
     .csslintrc
+    .editorconfig
     .jshintignore
     .travis.yml
-    bootstrap.py
+    Gruntfile.js
     buildout.cfg
-    templates
-    templates/*
+    package.json
+    requirements.txt
     travis.cfg
+    */node_modules
+    */node_modules/*
+    */package-lock.json
 
 
 [distutils]
@@ -25,5 +30,7 @@ formats = zip
 
 [spirit.releaser]
 diazo_export.enabled = 1
-diazo_export.path = src/{{{ package.namespace }}}/{{{ package.namespace2 }}}/{{{ package.name }}}/diazo_resources
+diazo_export.path = src/{{{ package.namespace }}}/{{{ package.namespace2 }}}/{{{ package.name }}}/theme
 diazo_export.adjust_title = 1
+diazo_export.adjust_theme_version = 1
+diazo_export.theme_name = {{{ package.longname }}}
