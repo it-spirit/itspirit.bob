@@ -4,10 +4,13 @@
 from setuptools import find_packages
 from setuptools import setup
 
-version = '0.2.dev0'
+version = '0.1.dev0'
 description = 'mr.bob templates for it-spirit projects.'
 long_description = ('\n'.join([
     open('README.rst').read(),
+    'Contributors',
+    '------------\n',
+    open('CONTRIBUTORS.rst').read(),
     open('CHANGES.rst').read(),
 ]))
 
@@ -29,10 +32,12 @@ setup(
         "Natural Language :: English",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
         "Topic :: Software Development :: Code Generators",
         "Topic :: Utilities",
     ],
-    keywords='',
+    keywords='plone zope diazo skeleton templating',
     author='it-spirit',
     author_email='info@it-spir.it',
     url='https://github.com/it-spirit/spirit.bob',
@@ -50,7 +55,6 @@ setup(
             'nose',
             'nose-selecttests',
             'scripttest',
-            'unittest2',
         ]
     },
     entry_points={},
