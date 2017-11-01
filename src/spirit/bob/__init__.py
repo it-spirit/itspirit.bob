@@ -1,1 +1,3 @@
+# -*- coding: utf-8 -*-
+"""mr.bob templates for it-spirit projects."""
 __import__('pkg_resources').declare_namespace(__name__)
