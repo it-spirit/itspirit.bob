@@ -6,7 +6,7 @@ from scripttest import TestFileEnvironment
 import os
 import shutil
 import tempfile
-import unittest2 as unittest
+import unittest
 
 
 class BaseTemplateTest(unittest.TestCase):
@@ -39,6 +39,7 @@ class BaseTemplateTest(unittest.TestCase):
 
 class DiazoThemeTest(BaseTemplateTest):
     """Test case for the `diazo_theme` template."""
+
     template = 'diazo_theme'
 
     def test_base_template(self):
