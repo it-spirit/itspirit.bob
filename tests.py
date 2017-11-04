@@ -57,6 +57,7 @@ class DiazoThemeTest(BaseTemplateTest):
         expected = [
             p,
             p + '/.csslintrc',
+            p + '/.coveragerc',
             p + '/.editorconfig',
             p + '/.gitignore',
             p + '/.jshintignore',
