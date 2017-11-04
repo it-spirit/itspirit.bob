@@ -16,6 +16,7 @@ test-eggs +=
 robot_tests_folder = ${buildout:directory}/src/{{{ package.namespace }}}/{{{ package.namespace2 }}}/{{{ package.name }}}/tests/robot
 
 parts +=
+    createcoverage
     i18ndude
     node
     npm-install
@@ -66,6 +67,11 @@ zptlint = True
 zptlint-bin = ${buildout:bin-directory}/zptlint
 
 
+[createcoverage]
+recipe = zc.recipe.egg
+eggs = createcoverage
+
+
 [instance]
 eggs +=
     ${buildout:package-name}[testfixture]
@@ -80,5 +86,7 @@ command = cd ${buildout:directory}; npm install .; cd ${buildout:directory}/src/
 
 
 [versions]
+# Don't use a released version of {{{ package.dottedname }}}
+{{{ package.dottedname }}} =
 collective.themesitesetup = 1.3.2
 zope.app.i18n = 3.6.4
