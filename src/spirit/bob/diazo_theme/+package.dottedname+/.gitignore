@@ -16,6 +16,7 @@ docs/build/
 docs/themepreview/
 downloads/
 eggs/
+htmlcov/
 node_modules/
 parts/
 var/
