@@ -1,12 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="{{{ package.dottedname }}}">
-
-  <five:registerPackage package="." initialize=".initialize" />
 
   <!-- Register i18n support. -->
   <!-- ====================== -->
@@ -22,12 +19,19 @@
   <!-- Register the diazo theme resources. -->
   <!-- =================================== -->
   <plone:static
-      directory="diazo_resources"
+      directory="theme"
+      name="{{{ package.longname }}}"
+      type="theme"
+      />
+
+  <plone:static
+      directory="theme-custom"
+      name="{{{ package.longname }}}-custom"
       type="theme"
       />
 
 
-  <!-- Register z4c.jbot template overrides. -->
+  <!-- Register z3c.jbot template overrides. -->
   <!-- ===================================== -->
   <include package="z3c.jbot" />
   <browser:jbot
