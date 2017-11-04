@@ -50,7 +50,7 @@ setup(
     ],
     keywords='plone diazo',
     author='it-spirit',
-    author_email='info@it-spir.it',
+    author_email='development@it-spir.it',
     url='https://github.com/it-spirit/{{{ package.dottedname }}}',
     download_url='http://pypi.python.org/pypi/{{{ package.dottedname }}}',
     license='GPL',

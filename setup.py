@@ -39,7 +39,7 @@ setup(
     ],
     keywords='plone zope diazo skeleton templating',
     author='it-spirit',
-    author_email='info@it-spir.it',
+    author_email='development@it-spir.it',
     url='https://github.com/it-spirit/spirit.bob',
     download_url='http://pypi.python.org/pypi/spirit.bob',
     license='BSD',

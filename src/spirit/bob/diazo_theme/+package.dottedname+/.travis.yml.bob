@@ -31,5 +31,5 @@ after_success:
   - coveralls
 notifications:
   email:
-    - info@it-spir.it
+    - development@it-spir.it
     - {{{ author.email }}}
