@@ -1,7 +1,6 @@
-**********{{% for n in range(0, theme.name|length) %}}*{{% endfor %}}
-
-it-spirit {{{ theme.name }}}
-**********{{% for n in range(0, theme.name|length) %}}*{{% endfor %}}
+=========={{% for n in range(0, theme.name|length) %}}={{% endfor %}}======
+it-spirit {{{ theme.name }}} Theme
+=========={{% for n in range(0, theme.name|length) %}}={{% endfor %}}======
 
 
 .. only:: html
@@ -12,14 +11,11 @@ it-spirit {{{ theme.name }}}
 .. toctree::
    :maxdepth: 2
 
-   configuration
+   Installation <install>
+   options/index
+   add-ons/index
 
 
-.. only:: html
+.. figure:: ../_images/settings-color_option--default.png
 
-  Indices and tables
-  ==================
-
-  * :ref:`genindex`
-  * :ref:`modindex`
-  * :ref:`search`
+   Plone site with {{{ theme.name }}} Theme installed

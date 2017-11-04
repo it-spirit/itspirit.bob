@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Configuration options for the it-spirit {{{ theme.name }}}."""
+"""Configuration options for the it-spirit {{{ theme.name }}} Theme."""
 
 PROFILE_ID = u'profile-{{{ package.dottedname }}}'
 INSTALL_PROFILE = '{0}:default'.format(PROFILE_ID)

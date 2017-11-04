@@ -7,7 +7,7 @@ from setuptools import (
 )
 
 version = '0.1.dev0'
-description = 'it-spirit {{{ theme.name }}}.'
+description = 'it-spirit {{{ theme.name }}} Theme.'
 long_description = ('\n'.join([
     open('README.rst').read(),
     open('CONTRIBUTORS.rst').read(),

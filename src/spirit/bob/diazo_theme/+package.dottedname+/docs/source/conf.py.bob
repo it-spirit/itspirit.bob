@@ -205,7 +205,7 @@ latex_elements = {
 latex_documents = [(
     'index',
     '{{{ package.longname }}}.tex',
-    u'it-spirit {{{ theme.name }}}',
+    u'it-spirit {{{ theme.name }}} Theme',
     u'it-spirit',
     'howto',
 )]
@@ -238,7 +238,7 @@ latex_logo = '_static/logo.png'
 man_pages = [(
     'index',
     '{{{ package.longname }}}',
-    u'it-spirit {{{ theme.name }}}',
+    u'it-spirit {{{ theme.name }}} Theme',
     [u'it-spirit'],
     1,
 )]
@@ -255,7 +255,7 @@ man_pages = [(
 texinfo_documents = [(
     'index',
     '{{{ package.longname }}}',
-    u'it-spirit {{{ theme.name }}}',
+    u'it-spirit {{{ theme.name }}} Theme',
     u'it-spirit',
     '{{{ package.longname }}}',
     'A diazo theme.',

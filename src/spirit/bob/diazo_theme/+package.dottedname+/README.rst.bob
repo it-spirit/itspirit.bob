@@ -1,2 +1,2 @@
-it-spirit {{{ theme.name }}}
-=========={{% for n in range(0, theme.name|length) %}}={{% endfor %}}
+it-spirit {{{ theme.name }}} Theme
+=========={{% for n in range(0, theme.name|length) %}}={{% endfor %}}======
