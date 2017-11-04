@@ -131,6 +131,5 @@ class DiazoThemeTest(BaseTemplateTest):
             p_src_pkg + '/tests/robot/test_setup.robot',
             p_src_pkg + '/tests/test_robot.py',
             p_src_pkg + '/tests/test_setup.py',
-            p + '/travis.cfg',
         ]
         self.assertItemsEqual(result.files_created.keys(), expected)
