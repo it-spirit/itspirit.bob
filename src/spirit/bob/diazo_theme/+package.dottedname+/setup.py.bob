@@ -10,8 +10,6 @@ version = '0.1.dev0'
 description = 'it-spirit {{{ theme.name }}}.'
 long_description = ('\n'.join([
     open('README.rst').read(),
-    'Contributors',
-    '------------\n',
     open('CONTRIBUTORS.rst').read(),
     open('CHANGES.rst').read(),
 ]))
