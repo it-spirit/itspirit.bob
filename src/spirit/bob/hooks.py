@@ -1,6 +1,19 @@
 # -*- coding: utf-8 -*-
 """Pre- and Post-Render Hooks for mr.bob."""
 
+# pyhton imports
+import subprocess
+
+
+def get_git_info(value):
+    """Try to get information from the git-config."""
+    gitargs = ['git', 'config', '--get']
+    try:
+        result = subprocess.check_output(gitargs + [value]).strip()
+        return result
+    except (OSError, subprocess.CalledProcessError):
+        pass
+
 
 def prepare_diazo_render(configurator):
     """Some variables to make templating easier."""
@@ -34,3 +47,17 @@ def prepare_diazo_render(configurator):
 
     # package.longname = 'spiritdiazomytheme'
     configurator.variables['package.longname'] = camelcasename.lower()
+
+
+def pre_email(configurator, question):
+    """Get email from git."""
+    default = get_git_info('user.email')
+    if default:
+        question.default = default
+
+
+def pre_username(configurator, question):
+    """Get email from git and validate package name."""
+    default = get_git_info('user.name')
+    if default:
+        question.default = default
