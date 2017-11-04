@@ -1,11 +1,19 @@
 [theme]
-title = it-spirit {{{ theme.name }}}
-description = {{{ theme.name }}} from {{{ package.dottedname }}} package.
+title = {{{ theme.name }}} Theme
+description = A Plone 5 Theme by it-spirit.
 preview = preview.png
 doctype = <!Doctype html>
+rules = /++theme++{{{ package.longname }}}/rules.xml
+prefix = /++theme++{{{ package.longname }}}
+production-css = /++theme++{{{ package.longname }}}-custom/custom.css
+production-js = /++theme++{{{ package.longname }}}-custom/custom.js
+# tinymce-content-css = /++theme++{{{ package.longname }}}/assets/css/theme.css
+
+[theme:genericsetup]
+install = install
+uninstall = uninstall
 
 [theme:parameters]
 portal_url = portal_state/portal_url
-language = portal_state/language
-ajax_load = python: 'ajax_load' in request.form
-anonymous = portal_state/anonymous
+
+[theme:themefragments:tiles]
