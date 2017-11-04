@@ -64,6 +64,7 @@ class DiazoThemeTest(BaseTemplateTest):
             p + '/.travis.yml',
             p + '/CHANGES.rst',
             p + '/CONTRIBUTORS.rst',
+            p + '/Gruntfile.js',
             p + '/README.rst',
             p + '/buildout.cfg',
             p + '/docs',
