@@ -40,7 +40,7 @@ clean-lines = True
 csslint = True
 csslint-bin = ${buildout:bin-directory}/csslint
 deprecated-aliases = True
-directory = ${buildout:directory}/src/
+directory = ${buildout:directory}/src/{{{ package.namespace }}}
 find-untranslated = True
 flake8-extensions =
     flake8-blind-except
