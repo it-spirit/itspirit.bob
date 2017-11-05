@@ -2,7 +2,7 @@
 title = {{{ theme.name }}} Theme
 description = A Plone 5 Theme by it-spirit.
 preview = preview.png
-doctype = <!Doctype html>
+doctype = <!DOCTYPE html>
 rules = /++theme++{{{ package.longname }}}/rules.xml
 prefix = /++theme++{{{ package.longname }}}
 production-css = /++theme++{{{ package.longname }}}-custom/custom.css
