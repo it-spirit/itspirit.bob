@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Pre- and Post-Render Hooks for mr.bob."""
 
-# pyhton imports
 import subprocess
 
 
