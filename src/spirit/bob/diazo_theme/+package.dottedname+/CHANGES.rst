@@ -5,3 +5,4 @@ Changelog
 ----------------
 
 - Initial release.
+  [{{{ author.github.user }}}]

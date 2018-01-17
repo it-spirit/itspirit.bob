@@ -24,13 +24,36 @@ index-servers =
     pypi
 
 
+[isort]
+# for details see
+# http://docs.plone.org/develop/styleguide/python.html#grouping-and-sorting
+force_alphabetical_sort = True
+force_single_line = True
+from_first = True
+line_length = 79
+lines_after_imports = 2
+not_skip = __init__.py
+
+
 [sdist]
 formats = zip
 
 
 [spirit.releaser]
-diazo_export.enabled = 1
+diazo_export.multi =
+    theme
+    custom
+diazo_export.enabled = true
+diazo_export.adjust_title = true
+diazo_export.adjust_theme_version = true
+diazo_export.exclude =
+    node_modules
+    _less
+
+[spirit.releaser:theme]
 diazo_export.path = src/{{{ package.namespace }}}/{{{ package.namespace2 }}}/{{{ package.name }}}/theme
-diazo_export.adjust_title = 1
-diazo_export.adjust_theme_version = 1
 diazo_export.theme_name = {{{ package.longname }}}
+
+[spirit.releaser:custom]
+diazo_export.path = src/{{{ package.namespace }}}/{{{ package.namespace2 }}}/{{{ package.name }}}/theme-custom
+diazo_export.theme_name = {{{ package.longname }}}-custom

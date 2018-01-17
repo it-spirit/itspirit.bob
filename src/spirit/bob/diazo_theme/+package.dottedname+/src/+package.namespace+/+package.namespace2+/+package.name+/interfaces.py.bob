@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Common interface definitions for {{{ package.dottedname }}}."""
 
-# zope imports
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 

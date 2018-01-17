@@ -1,15 +1,27 @@
 # -*- coding: utf-8 -*-
 """Post install import steps for {{{ package.dottedname }}}."""
 
+from Products.CMFPlone.interfaces import INonInstallable
+from zope.interface import implementer
 
-def is_not_current_profile(context):
-    return context.readDataFile(
-        '{{{ package.longname }}}_marker.txt'
-    ) is None
+
+@implementer(INonInstallable)
+class HiddenProfiles(object):
+    """Hidden GS profiles."""
+
+    def getNonInstallableProfiles(self):
+        """Do not show on Plone's list of installable profiles."""
+        return [
+            '{{{ package.dottedname }}}:testfixture',
+            '{{{ package.dottedname }}}:uninstall',
+        ]
 
 
 def post_install(context):
-    """Post install script."""
-    if is_not_current_profile(context):
-        return
-    # Do something during the installation of this package
+    """Post install script"""
+    # Do something at the end of the installation of this package.
+
+
+def uninstall(context):
+    """Uninstall script"""
+    # Do something at the end of the uninstallation of this package.

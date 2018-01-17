@@ -14,10 +14,11 @@
   <!-- ============================= -->
   <includeDependencies package="." />
   <include file="profiles.zcml" />
+  <include file="upgrades.zcml" />
 
 
-  <!-- Register the diazo theme resources. -->
-  <!-- =================================== -->
+  <!-- Register the diazo themes. -->
+  <!-- ========================== -->
   <plone:static
       directory="theme"
       name="{{{ package.longname }}}"

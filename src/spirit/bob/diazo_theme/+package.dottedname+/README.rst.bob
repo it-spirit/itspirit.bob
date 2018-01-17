@@ -1,2 +1,24 @@
+=========={{% for n in range(0, theme.name|length) %}}={{% endfor %}}======
 it-spirit {{{ theme.name }}} Theme
 =========={{% for n in range(0, theme.name|length) %}}={{% endfor %}}======
+
+
+.. image:: https://img.shields.io/pypi/v/{{{ package.dottedname }}}.svg
+   :target: https://pypi.python.org/pypi/{{{ package.dottedname }}}
+   :alt: PyPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/{{{ package.dottedname }}}.svg
+   :target: https://pypi.python.org/pypi/{{{ package.dottedname }}}
+   :alt: Supported Python Versions
+
+.. image:: https://img.shields.io/travis/it-spirit/{{{ package.dottedname }}}/master.svg
+   :target: https://travis-ci.org/it-spirit/{{{ package.dottedname }}}
+   :alt: Travis CI status
+
+.. image:: https://img.shields.io/coveralls/github/it-spirit/{{{ package.dottedname }}}/master.svg
+   :target: https://coveralls.io/github/it-spirit/{{{ package.dottedname }}}?branch=master
+   :alt: Coverage Status
+
+.. image:: https://img.shields.io/readthedocs/{{{ package.longname }}}.svg
+   :target: https://{{{ package.longname }}}.readthedocs.io
+   :alt: Documentation

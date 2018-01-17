@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
-"""it-spirit {{{ theme.name }}}."""
+"""it-spirit {{{ theme.name }}} Theme."""
 
-# python imports
-import logging
-
-# zope imports
+from {{{ package.dottedname }}} import config
 from zope.i18nmessageid import MessageFactory
 
-# local imports
-from {{{ package.dottedname }}} import config
+import logging
+
 
 logger = logging.getLogger(config.PROJECT_NAME)
 _ = MessageFactory('{{{ package.dottedname }}}')

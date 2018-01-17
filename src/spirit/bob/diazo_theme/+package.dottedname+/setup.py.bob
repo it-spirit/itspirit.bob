@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """Setup for {{{ package.dottedname }}} package."""
 
-from setuptools import (
-    find_packages,
-    setup,
-)
+from setuptools import find_packages
+from setuptools import setup
 
 version = '0.1.dev0'
 description = 'it-spirit {{{ theme.name }}} Theme.'
@@ -20,6 +18,8 @@ install_requires = [
     'collective.themefragments',
     'collective.themesitesetup',
     'plone.api',
+    'plone.app.theming',
+    'Products.GenericSetup>=1.8.2',
     'spirit.plone.theming',
     'z3c.jbot',
 ]
