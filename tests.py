@@ -59,6 +59,7 @@ class DiazoThemeTest(BaseTemplateTest):
             p + '/.csslintrc',
             p + '/.coveragerc',
             p + '/.editorconfig',
+            p + '/.gitattributes',
             p + '/.gitignore',
             p + '/.jshintignore',
             p + '/.travis.yml',
