@@ -8,6 +8,8 @@ python:
   - 2.7
 matrix:
   fast_finish: true
+before_install:
+  - pip uninstall -y six
 install:
   - pip install -U zc.buildout
   - buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True annotate

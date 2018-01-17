@@ -13,6 +13,8 @@ matrix:
   fast_finish: true
 addons:
   firefox: 45.8.0esr
+before_install:
+  - pip uninstall -y six
 install:
   - sed -ie "s#test-5.1.x.cfg#test-$PLONE_VERSION.x.cfg#" buildout.cfg
   - pip install -U zc.buildout
