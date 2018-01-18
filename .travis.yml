@@ -11,9 +11,10 @@ matrix:
 before_install:
   - pip uninstall -y six
 install:
-  - pip install -r requirements.txt
-  - buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True annotate
-  - buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True
+  - pip install pipenv
+  - pipenv install --dev
+  - pipenv run buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True annotate
+  - pipenv run buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
