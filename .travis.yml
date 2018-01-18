@@ -11,7 +11,7 @@ matrix:
 before_install:
   - pip uninstall -y six
 install:
-  - pip install -U zc.buildout
+  - pip install -r requirements.txt
   - buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True annotate
   - buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True
 before_script:
