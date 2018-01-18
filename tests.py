@@ -92,6 +92,7 @@ class DiazoThemeTest(BaseTemplateTest):
             p + '/docs/source/index.rst',
             p + '/docs/source/install.rst',
             p + '/package.json',
+            p + '/requirements.txt',
             p + '/setup.cfg',
             p + '/setup.py',
             p + '/src',
