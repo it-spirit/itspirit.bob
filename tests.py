@@ -91,6 +91,7 @@ class DiazoThemeTest(BaseTemplateTest):
             p + '/docs/source/conf.py',
             p + '/docs/source/index.rst',
             p + '/docs/source/install.rst',
+            p + '/Pipfile',
             p + '/package.json',
             p + '/requirements.txt',
             p + '/setup.cfg',
