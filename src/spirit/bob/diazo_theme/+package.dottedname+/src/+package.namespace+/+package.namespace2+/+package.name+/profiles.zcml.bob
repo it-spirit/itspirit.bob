@@ -7,7 +7,7 @@
   <!-- GenericSetup Profiles. -->
   <!-- ====================== -->
   <genericsetup:registerProfile
-      description="{{{ theme.name }}} for Plone 5."
+      description="{{{ theme.name }}} Theme for Plone 5."
       directory="profiles/default"
       name="default"
       provides="Products.GenericSetup.interfaces.EXTENSION"
