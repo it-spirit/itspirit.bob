@@ -126,8 +126,6 @@ class DiazoThemeTest(BaseTemplateTest):
             p_src_pkg + '/profiles/uninstall/browserlayer.xml',
             p_src_pkg + '/profiles/uninstall/theme.xml',
             p_src_pkg + '/setuphandlers.py',
-            p_src_pkg + '/template_overrides',
-            p_src_pkg + '/template_overrides/README',
             p_src_pkg + '/testing.py',
             p_src_pkg + '/tests',
             p_src_pkg + '/tests/__init__.py',
